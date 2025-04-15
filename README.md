@@ -46,6 +46,11 @@ npm install
 ```
 npm run serve
 ```
+## Credenciais
+```
+usuario: admin
+password: admin
+```
 2.
 O projeto estará disponível em http://localhost:8080.
 ```
