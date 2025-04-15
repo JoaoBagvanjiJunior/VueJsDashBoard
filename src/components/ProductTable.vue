@@ -57,7 +57,7 @@
             >
               <PhNotePencil size="20" />
             </button>
-            <button class="delete-btn" @click="deleteProduct(product.id)">
+            <button class="trash-btn" @click="deleteProduct(product.id)">
               <PhTrash size="20" />
             </button>
           </td>
@@ -275,7 +275,9 @@ tbody tr:hover {
 .dark .delete-btn {
   color: #ff5c8d;
 }
-
+.dark .trash-btn {
+  color: #ff5c8d;
+}
 .dark .status-process {
   background-color: #fff8e1;
   color: #f9a825;
@@ -305,6 +307,10 @@ tbody tr:hover {
   color: #e11d48;
 }
 
+.dark .trash-btn {
+  color: #e11d48;
+}
+
 .actions {
   gap: 8px;
 }
@@ -325,6 +331,11 @@ button {
 }
 
 .delete-btn {
+  color: #e11d48;
+  margin-left: 0.5rem;
+}
+
+.trash-btn {
   color: #e11d48;
   margin-left: 0.5rem;
 }
@@ -467,6 +478,20 @@ button {
 }
 
 .delete-btn {
+  flex: 1;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #e11d48;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.trash-btn {
   flex: 1;
   padding: 10px;
   color: #e11d48;
